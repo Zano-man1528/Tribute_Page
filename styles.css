@@ -1,0 +1,52 @@
+body {
+    border: 2px black solid;
+    margin: 0 5em 5em;
+    padding: 0 10% 5em;
+    background-color: black;
+}
+
+img {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border: 2px teal solid;
+}
+
+h1 {
+    border: 2px orange solid;
+}
+
+.intro-biography {
+    border: 2px purple solid;
+    min-width: 20em;
+    min-height: 30em;
+    max-width: 50%;
+    min-height: 30%;
+}
+
+.image-container {
+    border: 2px green solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    border: 2px blue solid;
+    min-width: 35em;
+    min-height: 30em;
+    max-width: 50%;
+    min-height: 30%;
+}
+
+.timeline-container {
+    border: 2px red solid;
+}
