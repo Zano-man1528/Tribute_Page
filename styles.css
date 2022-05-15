@@ -1,52 +1,152 @@
-body {
-    border: 2px black solid;
-    margin: 0 5em 5em;
-    padding: 0 10% 5em;
-    background-color: black;
-}
+/* DEV STYLES */
 
-img {
-    max-width: 300px;
-    max-height: 200px;
-    border-radius: 50%;
+body {
+  border: 2px grey solid;
+  max-width: 100vw;
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    border: 2px teal solid;
+  border: 2px teal solid;
 }
 
 h1 {
-    border: 2px orange solid;
+  border: 2px orange solid;
 }
 
 .intro-biography {
-    border: 2px purple solid;
-    min-width: 20em;
-    min-height: 30em;
-    max-width: 50%;
-    min-height: 30%;
+  border: 2px purple solid;
 }
 
 .image-container {
-    border: 2px green solid;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-
-.quote {
-    border: 2px blue solid;
-    min-width: 35em;
-    min-height: 30em;
-    max-width: 50%;
-    min-height: 30%;
+  border: 2px green solid;
 }
 
 .timeline-container {
-    border: 2px red solid;
+  border: 2px red solid;
+}
+
+.quote {
+  border: 2px blue solid;
+}
+
+/* li { /* THIS BORDER IS FOR STYLE DEVELOPMENT 
+  border: 0.2rem solid #f5f6;
+}
+*/
+
+/* COLOR VARIABLES */
+:root {
+  --red: rgba(202, 1, 1, 0.886);
+  --blue: rgba(0, 6, 184, 0.895);
+  --yellow: rgba(224, 224, 0, 0.961);
+  --brown: rgba(148, 57, 21, 0.854);
+}
+
+/* STRUCTURE OF THE PAGE */
+
+body {
+  margin: 0 5em 5em;
+  padding: 0 10% 5em;
+  background-color: black;
+  color: aliceblue;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  margin: 0.5em;
+  min-width: 25vw;
+  width: auto;
+}
+
+.intro-biography {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* NEON COLORS & BORDERS */
+
+.redNeonGlow {
+  border: 0.2rem solid #fff;
+  border-radius: 0.8rem;
+  padding: 0.7em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem var(--red),
+    0 0 0.8rem var(--red), 0 0 2.8rem var(--red), inset 0 0 1.3rem var(--red);
+  color: #fff;
+}
+
+.blueNeonGlow {
+  border: 0.2rem solid #fff;
+  border-radius: 0.8rem;
+  padding: 0.7em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem var(--blue),
+    0 0 0.8rem var(--blue), 0 0 2.8rem var(--blue), inset 0 0 1.3rem var(--blue);
+  color: #fff;
+}
+
+.yellowNeonGlow {
+  border: 0.2rem solid #fff;
+  border-radius: 0.8rem;
+  padding: 0.7em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem var(--yellow),
+    0 0 0.8rem var(--yellow), 0 0 2.8rem var(--yellow),
+    inset 0 0 1.3rem var(--yellow);
+  color: #fff;
+}
+
+.brownNeonGlow {
+  border: 0.2rem solid #fff;
+  border-radius: 0.8rem;
+  padding: 0.7em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem var(--brown),
+    0 0 0.8rem var(--brown), 0 0 2.8rem var(--brown),
+    inset 0 0 1.3rem var(--brown);
+  color: #fff;
+}
+
+/*NEON ANIMATIONS*/
+
+.pulsateRed {
+  animation: pulsate 1.5s infinite alternate;
+}
+
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px var(--red),
+      0 0 80px var(--red), 0 0 90px var(--red), 0 0 100px var(--red),
+      0 0 150px var(--red);
+  }
+
+  0% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px var(--red),
+      0 0 45px var(--red), 0 0 55px var(--red), 0 0 70px var(--red),
+      0 0 80px var(--red);
+  }
 }
