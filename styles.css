@@ -47,7 +47,7 @@ h1 {
 body {
   margin: 0 5em 5em;
   padding: 0 10% 5em;
-  background-color: black;
+  background-color: #040000f7;
   color: aliceblue;
   font-family: "Helvetica Neue", sans-serif;
 }
@@ -131,22 +131,20 @@ li {
   color: #fff;
 }
 
-/*NEON ANIMATIONS*/
+/*NEON ANIMATIONS */
 
-.pulsateRed {
-  animation: pulsate 1.5s infinite alternate;
+.pulsate {
+  animation: pulsate 1s infinite alternate;
 }
 
 @keyframes pulsate {
   100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px var(--red),
-      0 0 80px var(--red), 0 0 90px var(--red), 0 0 100px var(--red),
-      0 0 150px var(--red);
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
   }
 
   0% {
-    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px var(--red),
-      0 0 45px var(--red), 0 0 55px var(--red), 0 0 70px var(--red),
-      0 0 80px var(--red);
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #0fa,
+      0 0 45px #0fa, 0 0 55px #0fa, 0 0 70px #0fa, 0 0 80px #0fa;
   }
 }
